@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./jQuery.js"></script>
+</head>
+<body>
+    <div id="area">
+        <img src="./img/EDG.png" alt="" class="EDG" style="position: relative;">
+        <img src="./img/FPX.png" alt="" class="FPX" style="position: relative;">
+        <img src="./img/TE.png" alt="" class="TE" style="position: relative;">
+        <img src="./img/BLG.png" alt="" class="BLG" style="position: relative;">
+        <img src="./img/EDG.png" alt="" class="EDG1" style="position: absolute;left: 700px;bottom: 220px;">
+    </div>
+    <div id="bottom">
+        <input type="button" value="开始支持投票" style="display: block;margin: auto; margin-top: 30px;height: 30px;">
+    </div>
+    <script>
+        // 此处插入你的代码
+        let EDGn=3;
+        let FPXn=1;
+        let TEn=1;
+        let BLGn=0;
+        $(function(){
+            $(".EDG1").hide()
+        })
+        $("#bottom").on("click",function(){
+            $(".EDG").animate({
+                left: EDGn*100
+            })
+                
+        })
+        $("#bottom").on("click",function(){
+            $(".FPX").animate({
+                left: FPXn*100
+            })
+                
+        })
+        $("#bottom").on("click",function(){
+            $(".TE").animate({
+                left: TEn*100
+            })
+                
+        })
+        $("#bottom").on("click",function(){
+            $(".BLG").animate({
+                left: BLGn*100
+            })
+                
+        })
+        $("#bottom").on("click",function(){
+            $(".EDG1").fadeIn(100)
+           
+        })
+    </script>
+
+    
+</body>
+</html>
